@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background-image: url(https://amqueretaro.com/wp-content/uploads/2019/12/uaq-2.jpg);
+	}
+
+/*diseño default*/
+.capa{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.6);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		height: 100px;
+		background-color: lightseagreen;
+
+	}
+	.container{
+		margin: 0px 40px 0px 40px;
+	}
+	/*parte izquierda */
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	/*parte derecha*/
+	.container .menu{
+		float: right;
+		line-height:70px;
+		display: flex;
+		justify-items: center;
+		align-items: center;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		background-color: cadetblue;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: fixed;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: darkslategray;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		/*para que se abra desde la izquierda a la derecha*/
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid aliceblue;
+		background: cadetblue;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+/*Diseño horario*/
+.horario{
+	margin-top: 20px;
+}
+.alinear_materias{
+	display: block;
+}
+.titulo{
+	 display: flex;
+	 justify-content: center;
+}
+.titulo h2{
+	display: flex;
+	justify-content: center;
+	padding: 10px 25px 10px 25px;
+	width: 150px ;
+	border-radius: 20px;
+	background-color: darkcyan;
+	color: white;
+}
+.mantener{
+	display: flex;
+	justify-content: center;
+}
+.info_mate{
+	display: block;
+	
+}
+.alinear{
+	display: flex;
+	justify-content: center;
+	margin: 5px 0px 5px 0px;
+	border-radius: 20px;
+	background-color: lavender;
+}
+.horas{
+	display: block;
+	justify-content: center;
+}
+.horas p{
+	padding: 10px 25px 10px 25px;
+	width: 150px ;
+}
+.materias
+{
+	display: flex;
+	justify-content: center;
+}
+.materias span{
+	padding: 10px 25px 10px 25px;
+	width: 150px ;
+}
+.materias span p{
+	margin: 0px 0px 5px 0px;
+	display: flex;
+	justify-content: center;
+}
+.materias span .mate{
+	margin: 0px 0px 5px 0px;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+}

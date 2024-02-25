@@ -1,0 +1,68 @@
+body{
+	background-color: darkslategray;
+}
+header{
+	color:white;
+	font-family: rockwell,sans-serif;
+	font-size: 20px;
+	background-color: lightseagreen;
+	height: 20%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	margin:0px 210px 0px 210px;
+	box-shadow: 10px 5px 5px black;
+}
+form{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	margin:17px 210px 0px 210px;
+	background-color: cadetblue;
+	padding: 30px 0px 30px 0px;
+	border-radius: 20px;
+	box-shadow: 10px 5px 5px black;
+	position: relative;
+}
+.imagen{
+	position: absolute;
+	top:0;
+   	bottom:0;
+   	left: 40px;
+	margin: 20px 30px 25px 0px;
+}
+.imagen img{
+	height: 130px;
+	border-radius: 80px;
+	box-shadow: 2px 2px 5px lightblue;
+}
+.Informacion p{
+	
+	font-family: sans-serif;
+}
+#matricula, #nip{
+	height: 25px;
+	width: 300px;
+	border-style: ridge;
+	border-radius: 10px;
+	border-color: white;
+}
+.Opciones{
+	margin: 30px 0px 0px 10px;
+	display: grid;
+}
+#entrar{
+	width: 100px;
+	height: 35px;
+	border-style: none;
+	align-self: center;
+	justify-self: center;
+	background-color: darkred;
+	color:white;
+	border-radius: 5px;
+	margin: 10px 0px 10px 0px;
+}
+.Opciones a{
+	margin: 10px 0px 0px 0px;
+	justify-self: center;
+}
